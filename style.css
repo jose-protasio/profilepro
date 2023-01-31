@@ -20,17 +20,14 @@ nav{
     max-width: fit-content;
 }
 
-
 .content{
-    background-color: #d0e4ae;
+    background-color: #ffffff;
 }
-
 
 img{
     width: 15%;
     height: 15%;
     border-radius: 100px;
-
 }
 
 
@@ -94,7 +91,6 @@ p{
     flex-direction: column;
     align-items: center;
     background-color: #194b32;
-    /* background-color: #194b32; */
 }
 
 .intro h1{
@@ -112,4 +108,38 @@ p{
     text-align: justify;
     width: 90vw;
     color: #d0e4ae;
+}
+
+.footerContent{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    margin-top: 5vw;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.logoFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.about{
+    justify-content: center;
+}
+
+.about h2{
+    white-space: nowrap;
+}
+
+/* .follow{
+
+} */
+
+.follow p{
+    white-space: nowrap;
 }
