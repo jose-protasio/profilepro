@@ -25,11 +25,10 @@ nav{
 }
 
 img{
-    width: 15%;
+    width: 20%;
     height: 15%;
     border-radius: 100px;
 }
-
 
 p{
     font-style: italic;
@@ -39,12 +38,16 @@ p{
 .profileImg{
     display: flex;
     flex-direction: column;
-    margin-left: 1%;
-    height: 1%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    width: auto;
 }
 
 .profileImg img{
-    margin-top: 10px;
+    margin-top: 45px;
+    text-align: center;
+    height: 100%;
 }
 
 .profileImg h2{
@@ -61,7 +64,12 @@ p{
 
 .coderContent{
     display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
+    background-color: #ffffff;
+
 }
 
 .skills{
@@ -82,7 +90,9 @@ p{
 }
 
 .imgTitle{
+    display: flex;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 .intro{
@@ -90,7 +100,8 @@ p{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #194b32;
+    background-image: linear-gradient(180deg, #26704b, #194b32);
+
 }
 
 .intro h1{
@@ -136,10 +147,11 @@ p{
     white-space: nowrap;
 }
 
-/* .follow{
-
-} */
-
 .follow p{
     white-space: nowrap;
+}
+
+.coder{
+    display: flex;
+    margin-right: 15%;
 }
