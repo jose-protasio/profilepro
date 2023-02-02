@@ -9,7 +9,6 @@ header{
 }
 
 nav{
-    border-radius: 2px;
     width: 100vw;
     text-align: center;
     justify-content: center;
@@ -194,3 +193,32 @@ p{
     display: flex;
     margin-right: 15%;
 }
+
+.accordion button{
+    display: flex;
+    justify-content: center;
+    background-image: #ffff;
+    color: #fff;
+    background-color: #343a40!important;
+    /* background-image: linear-gradient(180deg, #ffffff, #ffffff); */
+    font-family: cursive;
+    font-size: large;
+}
+
+.accordion-button::after{
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.accordion-button:not(.collapsed){
+    color: #fff
+}
+
+.accordion-item{
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    margin: auto;
+}
+
+
