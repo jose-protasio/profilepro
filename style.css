@@ -1,44 +1,44 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
-header{
+header {
     background-color: #d0e4ae;
 }
 
-nav{
+nav {
     width: 100vw;
     text-align: center;
     justify-content: center;
 }
 
-.menu{
+.menu {
     display: flex;
     max-width: fit-content;
 }
 
-.content{
+.content {
     background-color: #ffffff;
 }
 
-.coderContent img{
+.coderContent img {
     width: 20%;
     height: 15%;
     border-radius: 100px;
 }
 
-p{
+p {
     font-style: italic;
-    font-weight:normal;
+    font-weight: normal;
 }
 
-.profileImg{
+.profileImg {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -47,40 +47,40 @@ p{
     width: auto;
 }
 
-.profileImg img{
+.profileImg img {
     margin-top: 45px;
     text-align: center;
     height: 100%;
 }
 
-.profileImg h2{
+.profileImg h2 {
     font-family: cursive;
     font-weight: bolder;
 }
 
-.profileImg p{
+.profileImg p {
     font-family: cursive;
     font-size: large;
 }
 
-.coder{
+.coder {
     display: flex;
     flex-direction: column;
     margin: auto;
     justify-content: center;
 }
 
-.coderContent{
+.coderContent {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     background-color: #d0e4ae;
-    border-bottom:1px solid #bed4c9;
+    border-bottom: 1px solid #bed4c9;
 }
 
-.skills{
+.skills {
     display: flex;
     width: 25%;
     height: 10%;
@@ -91,7 +91,7 @@ p{
     margin-top: 3%;
 }
 
-.skills h2{
+.skills h2 {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -99,19 +99,19 @@ p{
     font-weight: bolder;
 }
 
-.skills .imgTitle{
+.skills .imgTitle {
     display: flex;
     margin-bottom: 20px;
     justify-content: center;
 }
 
-.skills img{
+.skills img {
     width: 60px;
     height: 60px;
     border-radius: 3px;
 }
 
-.intro{
+.intro {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -120,16 +120,16 @@ p{
     border-radius: 3px;
 }
 
-.intro h1{
+.intro h1 {
     font-family: cursive;
     margin-top: 40px;
     color: #ffffff;
     font-weight: bold;
 }
 
-.intro p{
+.intro p {
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: larger;
     margin-top: 12px;
     text-align: justify;
@@ -141,7 +141,7 @@ p{
 
 }
 
-.footerContent{
+.footerContent {
     display: flex;
     flex-direction: row;
     gap: 10vw;
@@ -150,7 +150,7 @@ p{
     margin-right: 100px;
 }
 
-.logoFooter{
+.logoFooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,78 +159,78 @@ p{
     align-items: center;
 }
 
-.logoFooter img{
+.logoFooter img {
     border-radius: 100px;
     width: 90px;
     height: 90px;
 }
 
-.logoFooter p{
+.logoFooter p {
     font-family: cursive;
     font-size: large;
 }
 
-.about{
+.about {
     justify-content: center;
 }
 
-.about h2{
+.about h2 {
     white-space: nowrap;
     font-family: cursive;
     font-weight: bold;
 }
 
-.about p{
+.about p {
     font-family: cursive;
     font-size: large;
 }
 
-.follow h2{
+.follow h2 {
     font-family: cursive;
     font-weight: bold;
 }
 
-.follow p{
+.follow p {
     white-space: nowrap;
     font-family: cursive;
     font-size: large;
 }
 
-.solutions h2{
+.solutions h2 {
     font-family: cursive;
     font-weight: bold;
 }
 
-.solutions p{
+.solutions p {
     font-family: cursive;
     font-size: large;
 }
 
-.coder{
+.coder {
     display: flex;
     margin-right: 15%;
 }
 
-.accordion button{
+.accordion button {
     display: flex;
     justify-content: center;
     background-image: #ffff;
     color: #fff;
-    background-color: #343a40!important;
+    background-color: #343a40 !important;
     font-family: cursive;
     font-size: large;
 }
 
-.accordion-button::after{
+.accordion-button::after {
     background-color: #fff;
     border-radius: 2px;
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
     color: #fff
 }
 
-.accordion-item{
+.accordion-item {
     text-align: center;
     justify-content: center;
     width: 100vw;
@@ -238,3 +238,89 @@ p{
 }
 
 
+/* CARD */
+
+.flip {
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+    padding: 1em;
+    width: 100%;
+    height: 254px;
+    transform-style: preserve-3d;
+    transition: 3s ease;
+}
+
+.flip:hover {
+    transform: rotateY(180deg);
+}
+
+/* Content */
+.flip .content {
+    transform-style: preserve-3d;
+}
+
+.flip .back,
+.flip .front {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.flip .back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+}
+
+.flip h2,
+.flip p {
+    transform: translateZ(90px);
+    text-shadow: 0 0 3px black;
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.flip h2 {
+    font-size: 3em;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.flip p {
+    font-size: 1em;
+    color: #eee;
+    line-height: 1.6em;
+    padding-bottom: 40px;
+
+}
+
+.flip::before,
+.flip::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-image: linear-gradient(#26704b, #194b32);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotateY(180deg)translateZ(1px);
+}
+
+.flip::before {
+    transform: none;
+    background-image: linear-gradient(#26704b, #194b32);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.front {
+    background-image: linear-gradient(#26704b, #194b32);
+}
