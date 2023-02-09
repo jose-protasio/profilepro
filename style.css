@@ -1,334 +1,346 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 header {
-    background-color: #d0e4ae;
+  background-color: #d0e4ae;
 }
 
 nav {
-    width: 100vw;
-    text-align: center;
-    justify-content: center;
+  width: 100vw;
+  text-align: center;
+  justify-content: center;
+}
+
+a .navbar-brand {
+  color: red;
 }
 
 .menu {
-    display: flex;
-    max-width: fit-content;
+  display: flex;
+  max-width: fit-content;
 }
 
 .content {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .coderContent img {
-    width: 20%;
-    height: 15%;
-    border-radius: 100px;
+  width: 20%;
+  height: 15%;
+  border-radius: 100px;
 }
 
 p {
-    font-style: italic;
-    font-weight: normal;
+  font-style: normal;
+  font-weight: normal;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .profileImg {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
 }
 
 .profileImg img {
-    margin-top: 45px;
-    text-align: center;
-    height: 100%;
-    width: 30%;
+  margin-top: 45px;
+  text-align: center;
+  height: 45vh;
+  width: 20vw;
+  border-radius: 180px;
 }
 
 .profileImg h2 {
-    font-family: cursive;
-    font-weight: bolder;
+  font-family: normal;
+  font-weight: bolder;
+  font-size: xx-large;
 }
 
 .profileImg p {
-    font-family: cursive;
-    font-size: large;
+  font-style: italic;
+  font-size: large;
+  font-family: cursive sans-serif;
 }
 
 .coder {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
 }
 
 .coderContent {
-    display: flex;
-    background-color: #d0e4ae;
-    border-bottom: 1px solid #bed4c9;
+  display: flex;
+  background-color: #d0e4ae;
+  border-bottom: 1px solid #bed4c9;
 }
 
 .skills {
-    display: flex;
-    width: 25%;
-    height: 10%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    flex-direction: column;
-    margin-top: 3%;
+  display: flex;
+  width: 25%;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  margin-top: 3%;
 }
 
 .skills h2 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-family: cursive;
-    font-weight: bolder;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: normal;
+  font-weight: bolder;
 }
 
 .skills .imgTitle {
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
 }
 
 .skills img {
-    width: 60px;
-    height: 60px;
-    border-radius: 3px;
+  width: 60px;
+  height: 60px;
+  border-radius: 3px;
 }
 
 .intro {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-image: linear-gradient(180deg, #26704b, #194b32);
-    border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(180deg, #26704b, #194b32);
+  border-radius: 3px;
 }
 
 .intro h1 {
-    font-family: cursive;
-    margin-top: 40px;
-    color: #ffffff;
-    font-weight: bold;
+  font-family: cursive;
+  margin-top: 40px;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .intro p {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: larger;
-    margin-top: 12px;
-    text-align: justify;
-    width: 95vw;
-    color: #ffffff;
-    border-radius: 3px;
-    padding: 10px;
-    font-family: cursive;
-
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  margin-top: 12px;
+  text-align: justify;
+  width: 95vw;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  font-family: cursive;
 }
 
 .footerContent {
-    display: flex;
-    flex-direction: row;
-    gap: 10vw;
-    margin-top: 5vw;
-    justify-content: center;
-    margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+  margin-top: 5vw;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+.footerContent p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .logoFooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    text-align: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  align-items: center;
 }
 
 .logoFooter img {
-    border-radius: 100px;
-    width: 90px;
-    height: 90px;
+  border-radius: 100px;
+  width: 90px;
+  height: 90px;
 }
 
 .logoFooter p {
-    font-family: cursive;
-    font-size: large;
+  font-family: cursive sans-serif;
+  font-size: large;
 }
 
 .about {
-    justify-content: center;
+  justify-content: center;
 }
 
 .about h2 {
-    white-space: nowrap;
-    font-family: cursive;
-    font-weight: bold;
+  white-space: nowrap;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
 }
 
 .about p {
-    font-family: cursive;
-    font-size: large;
+  font-family: cursive sans-serif;
+  font-size: large;
 }
 
 .follow h2 {
-    font-family: cursive;
-    font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
 }
 
 .follow p {
-    white-space: nowrap;
-    font-family: cursive;
-    font-size: large;
+  white-space: nowrap;
+  font-family: cursive sans-serif;
+  font-size: large;
 }
 
 .solutions h2 {
-    font-family: cursive;
-    font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
 }
 
 .solutions p {
-    font-family: cursive;
-    font-size: large;
+  font-family: cursive sans-serif;
+  font-size: large;
 }
 
 .coder {
-    display: flex;
-    margin-right: 15%;
+  display: flex;
+  margin-right: 15%;
 }
 
 .accordion button {
-    display: flex;
-    justify-content: center;
-    background-image: #ffff;
-    color: #fff;
-    background-color: #343a40 !important;
-    font-family: cursive;
-    font-size: large;
+  display: flex;
+  justify-content: center;
+  background-image: #ffff;
+  color: #fff;
+  background-color: #343a40 !important;
+  font-family: cursive;
+  font-size: large;
 }
 
 .accordion-button::after {
-    background-color: #fff;
-    border-radius: 2px;
+  background-color: #fff;
+  border-radius: 2px;
 }
 
 .accordion-button:not(.collapsed) {
-    color: #fff
+  color: #fff;
 }
 
 .accordion-item {
-    text-align: center;
-    justify-content: center;
-    width: 100vw;
-    margin: auto;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+  margin: auto;
 }
 
-
 /* CARD */
-
 .flip {
-    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
-    padding: 1em;
-    width: 100%;
-    height: 254px;
-    transform-style: preserve-3d;
-    transition: 3s ease;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+  padding: 1em;
+  width: 100%;
+  height: 274px;
+  transform-style: preserve-3d;
+  transition: 3s ease;
 }
 
 .flip:hover {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /* Content */
 .flip .content {
-    transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .flip .back,
 .flip .front {
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    display: flex;
-    flex-direction: column;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .flip .back {
-    transform: rotateY(180deg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 10px;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10px;
 }
 
 .flip h2,
 .flip p {
-    transform: translateZ(90px);
-    text-shadow: 0 0 3px black;
-    text-align: center;
-    font-style: italic;
-    font-weight: normal;
+  transform: translateZ(90px);
+  text-shadow: 0 0 3px black;
+  text-align: center;
+  font-weight: normal;
 }
 
 .flip h2 {
-    font-size: 3em;
-    color: #fff;
-    letter-spacing: 1px;
+  font-size: 3em;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 .flip p {
-    font-size: 1em;
-    color: #eee;
-    line-height: 1.6em;
-    padding-bottom: 40px;
-
+  font-size: 1em;
+  color: #eee;
+  line-height: 1.6em;
+  padding-bottom: 40px;
 }
 
 .flip::before,
 .flip::after {
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    background-image: linear-gradient(#26704b, #194b32);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: rotateY(180deg)translateZ(1px);
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: linear-gradient(#26704b, #194b32);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateY(180deg) translateZ(1px);
 }
 
 .flip::before {
-    transform: none;
-    background-image: linear-gradient(#26704b, #194b32);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  transform: none;
+  background-image: linear-gradient(#26704b, #194b32);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .front {
-    background-image: linear-gradient(#26704b, #194b32);
+  background-image: linear-gradient(#26704b, #194b32);
 }
 
 /* Skills */
 @media (max-width: 360px) {
-    .imgTitle {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        object-fit: cover;
-        grid-template-columns: repeat(6, 1fr);
-        display: grid;
-        background-color: red;
-    }
+  .imgTitle {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    object-fit: cover;
+    grid-template-columns: repeat(6, 1fr);
+    display: grid;
+    background-color: red;
+  }
 }
