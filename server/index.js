@@ -14,7 +14,7 @@ const conexao = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'cadastro'
+    database: 'Cadastro'
 });
 
 conexao.connect((erro) => {
