@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Cadastro de Clientes</title>
     <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <script src="index.js"></script>
+    <script src="./public/registration.js"></script>
   </head>
   <body>
     <h1>Cadastro de Clientes</h1>
     <form>
       <label for="nome">Nome:</label>
       <input type="text" id="nome" name="nome" required>
+      
+      <label for="endereco">Email:</label>
+      <input type="text" id="endereco" name="endereco" required>
 
       <label for="data_nascimento">Data de Nascimento:</label>
-      <input type="date" id="data_nascimento" name="data_nascimento" required>
-
-      <label for="endereco">Endereço:</label>
-      <input type="text" id="endereco" name="endereco" required>
+      <input type="date" id="data_nasc" name="data_nascimento" required>
 
       <label for="cpf">CPF:</label>
       <input type="text" id="cpf" name="cpf" required>
@@ -35,6 +37,5 @@
       </tbody>
     </table>
 
-    <script src="index.js"></script>
-  </body>
+</body>
 </html>

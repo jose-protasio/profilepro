@@ -9,12 +9,11 @@ app.listen(port, () => {
 });
 
 const mysql = require('mysql');
-
 const conexao = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'Cadastro'
+    database: 'registros'
 });
 
 conexao.connect((erro) => {
@@ -27,30 +26,29 @@ conexao.connect((erro) => {
 });
 
 // cria um novo cliente
-app.post('/clientes', (req, res) => {
-    const {nome, data_nascimento, endereco, cpf} = req.body;
+app.post('/registros', (req, res) => {
+    const {nome, email, data_nasc, cpf} = req.body;
 
     conexao.query(
-        'INSERT INTO clientes (nome, data_nascimento, endereco, cpf) VALUES (?, ?, ?, ?)',
-        [nome, data_nascimento, endereco, cpf],
+        'INSERT INTO registros (nome, email, data_nasc, cpf) VALUES (nome, email, data_nasc, cpf)',
+        [nome, email, data_nasc, cpf],
         (erro, resultado) => {
              if(erro) {
                 console.log('Erro ao adicionar o cliente', erro);
                 res.status(500).send('Erro ao adicionar o cliente');
                 return;
              }
-
              res.status(201).send('Cliente adicionado com sucesso');
         }
     );
 });
 
-// Lista todos os clientes
-app.get('/clientes', (req, res) => {
-    conexao.query('SELECT * FROM clientes', (erro, resultados) => {
+// Lista todos os registros
+app.get('/registros', (req, res) => {
+    conexao.query('SELECT * FROM registros', (erro, resultados) => {
       if (erro) {
-        console.error('Erro ao obter os clientes', erro);
-        res.status(500).send('Erro ao obter os clientes');
+        console.error('Erro ao obter os registros', erro);
+        res.status(500).send('Erro ao obter os registros');
         return;
       }
   
